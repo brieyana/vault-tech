@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    font-style: italic;
+}
+
+.box {
+    display: block;
+    padding: 10px;
+    width: 90%;
+}
+
+.input {
+    margin-bottom: 10%;
+}
+
+.label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.button {
+    background-color: black;
+    font-weight: bolder;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    width: 80%;
+}
+
+.buttonContainer {
+    text-align: center;
+}
