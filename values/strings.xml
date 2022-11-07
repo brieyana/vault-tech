@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CS3354_VT_demo</string>
+    <string name="add_card">Add Card</string>
+    <string name="all_transactions">All Transactions</string>
+    <string name="report">Report</string>
+    <string name="wallet">Wallet</string>
+    <string name="banks">Banks</string>
+    <string name="settings">Settings</string>
+</resources>
