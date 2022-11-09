@@ -7,7 +7,13 @@
     font-style: italic;
 }
 
-.box {
+.error {
+    text-align: left;
+    color: red;
+    font-style: italic;
+}
+
+.inputBox {
     display: block;
     padding: 10px;
     width: 90%;
@@ -35,6 +41,10 @@
     cursor: pointer;
     border-radius: 16px;
     width: 80%;
+}
+
+.button:hover {
+    background-color: rgb(48, 47, 47);
 }
 
 .buttonContainer {
