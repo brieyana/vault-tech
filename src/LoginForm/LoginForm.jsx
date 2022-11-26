@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { instance } from '../client';
 import CSS from './LoginForm.module.css';
+import vault from '../images/vault.png';
+import { Link } from 'react-router-dom';
 
 // form component
 const LoginForm = ({ user, setUser }) => {
@@ -71,7 +73,13 @@ const LoginForm = ({ user, setUser }) => {
 
     return (
         <React.Fragment>
-            {console.log(users)}
+            <div id={CSS.header}>
+                <h1>Vault Tech</h1>
+            </div>
+            <div className={CSS.imageContainer}>
+                <img id={CSS.vault} src={vault} alt="Vault Tech Logo" />
+            </div>
+            <h2 className={CSS.subheading}>Log In</h2>
             <div className={CSS.container}>
                 <form onSubmit={(e) => handleSubmit(e)}>
                     <div className={CSS.input}>
@@ -100,13 +108,13 @@ const LoginForm = ({ user, setUser }) => {
                             placeholder="Enter password"
                         />
                     </div>
-                    <p>Reset password</p>
+                    <p><Link className={CSS.link} to="../forgot_password">Forgot password?</Link></p>
 
                     <div className={CSS.buttonContainer}>
                         <button type="submit" className={CSS.button}>Log in</button>
                     </div>
 
-                    <p className={CSS.text}>New to Vault Tech? Sign up here!</p>
+                    <p className={CSS.text}>New to Vault Tech? Sign up <Link className={CSS.link} to="../signup">here</Link></p>
                 </form>
             </div>
         </React.Fragment>
