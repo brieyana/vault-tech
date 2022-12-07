@@ -1,0 +1,58 @@
+#homePage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.buttonContainer {
+    text-align: center;
+}
+
+.buttonContainer .button {
+    margin-right: 2vw;
+}
+
+.heading {
+    text-align: center;
+}
+
+.about {
+    font-style: italic;
+}
+
+.content {
+    width: 50%
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.button {
+    background-color: black;
+    font-weight: bolder;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    width: fit-content;
+}
+
+.button:hover {
+    background-color: rgb(48, 47, 47);
+}
+
+#vault {
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

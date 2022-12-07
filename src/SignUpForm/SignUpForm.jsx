@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import CSS from './SignUpForm.module.css';
 import { userFields } from '../constants';
 import { instance } from '../client';
+import { Link } from 'react-router-dom';
 import vault from '../images/vault.png';
 
 const SignUpForm = () => {
@@ -63,7 +64,7 @@ const SignUpForm = () => {
     return (
         <React.Fragment>
             <div id={CSS.header}>
-                <h1>Vault Tech</h1>
+                <h1><Link className={CSS.headerLink} to="/">Vault Tech</Link></h1>
             </div>
             <div className={CSS.imageContainer}>
                 <img id={CSS.vault} src={vault} alt="Vault Tech Logo" />
@@ -81,6 +82,7 @@ const SignUpForm = () => {
                             required
                             onChange={(e) => onFormChange(e)}
                             placeholder="Enter email"
+                            autoComplete="off"
                         />
                     </div>
                     <div className={CSS.input}>
@@ -93,6 +95,7 @@ const SignUpForm = () => {
                             required
                             onChange={(e) => onFormChange(e)}
                             placeholder="Enter first name"
+                            autoComplete="off"
                         />
                     </div>
 
@@ -106,6 +109,7 @@ const SignUpForm = () => {
                             required
                             onChange={(e) => onFormChange(e)}
                             placeholder="Enter last name"
+                            autoComplete="off"
                         />
                     </div>
 
@@ -119,6 +123,7 @@ const SignUpForm = () => {
                             required
                             onChange={(e) => onFormChange(e)}
                             placeholder="Enter username"
+                            autoComplete="off"
                         />
                     </div>
 
@@ -132,6 +137,7 @@ const SignUpForm = () => {
                             required
                             onChange={(e) => onFormChange(e)}
                             placeholder="Enter password"
+                            autoComplete="off"
                         />
                     </div>
 

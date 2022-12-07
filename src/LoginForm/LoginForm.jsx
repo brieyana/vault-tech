@@ -74,7 +74,7 @@ const LoginForm = ({ user, setUser }) => {
     return (
         <React.Fragment>
             <div id={CSS.header}>
-                <h1>Vault Tech</h1>
+                <h1><Link className={CSS.headerLink} to="/">Vault Tech</Link></h1>
             </div>
             <div className={CSS.imageContainer}>
                 <img id={CSS.vault} src={vault} alt="Vault Tech Logo" />
@@ -93,6 +93,7 @@ const LoginForm = ({ user, setUser }) => {
                             required
                             onChange={(e) => onFormChange(e)}
                             placeholder="Enter username"
+                            autoComplete="off"
                         />
                     </div>
 
@@ -106,6 +107,7 @@ const LoginForm = ({ user, setUser }) => {
                             required
                             onChange={(e) => onFormChange(e)}
                             placeholder="Enter password"
+                            autoComplete="off"
                         />
                     </div>
                     <p><Link className={CSS.link} to="../forgot_password">Forgot password?</Link></p>
